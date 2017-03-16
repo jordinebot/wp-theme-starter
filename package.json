@@ -3,8 +3,8 @@
   "title": "WP Theme Starter Kit",
   "version": "0.1.0",
   "build": {
-    "css": 39,
-    "js": 28
+    "css": 1,
+    "js": 1
   },
   "description": "Starter kit for a WP Theme built with Gulp + ES6 (Babel)",
   "main": "main.js",
