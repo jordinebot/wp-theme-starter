@@ -2,7 +2,7 @@
         <?php
 
         /* Set your UA identifier as String here */
-        $googleAnalyticsUA = 'UA-XXXXXXXX-X';
+        $googleAnalyticsUA = ''; // Expected: UA-XXXXXXXX-X
 
         if ( !empty( $googleAnalyticsUA ) ) :
         ?>
