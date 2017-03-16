@@ -276,6 +276,7 @@ gulp.task('enqueue', ['scripts:concat', 'styles:concat'], () => {
 gulp.task('templates', () => {
     return gulp.src(routes.templates.src, {base: `${base.src}/templates/`})
     .pipe(newer(routes.templates.dest))
+    .pipe(replace({ patterns: replacements.common }))
     .pipe(gulp.dest(routes.templates.dest))
 });
 
