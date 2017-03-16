@@ -40,7 +40,7 @@ function @@theme_name_prefixed_function {
 }
 ```
 
-will be replaced on the *dist* folder with:
+will be replaced on the *dist* folder as:
 
 ```php
 function wp_theme_starter_prefixed_function {
@@ -70,20 +70,20 @@ All your SCSS will be trasnspiled to a non-minified `<dist>/style.css` with a va
 + `production`
 All scripts and styles (both yours and vendors) will be concatenated, minified/uglified and enqueued to Wordpress in `<dist>/style.css` and `<dist>/js/main.js`.
 
-In both environments, scripts and styles will be enqueued to Wordpress with the package version + build number to avoid browser's cache issues. The *dist* folder, by default will be named has your project with a leading underscore. So, by default: `_wp-theme-starter`.
+In both environments, scripts and styles will be enqueued to Wordpress with the package version + build number to avoid browser's cache issues. The *dist* folder will be named as your project with a leading underscore. So, by default: `_wp-theme-starter`.
 
 ### Developing
 
 Executing `gulp develop` or just `gulp` will do a first build on development environment and then will *watch* for changes on templates, styles and scripts to automatically rebuild those items.
 
-**Preview your theme**
+**Preview your theme**  
 Some people like to put the local Wordpress installation under the same project folder (even in the repo) while developing a theme. What I do is having a dummy WP install and link my theme under development the check the progress. Something like:
 
 ```bash
 ln -s /path-to/wp-theme-starter/_wp-theme-starter/ /path-to/wordpress/wp-content/themes/wp-theme-starter
 ```
 
-**Versioning**
+**Versioning**  
 The WordPress Theme Starter Kit provides `semver:major`, `semver:minor` and `semver:patch` tasks which automatically increases the proper digit on `package.json`'s version number. Execute them in the terminal as:
 
 ```bash
