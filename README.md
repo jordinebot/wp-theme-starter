@@ -77,7 +77,7 @@ In both environments, scripts and styles will be enqueued to Wordpress with the 
 Executing `gulp develop` or just `gulp` will do a first build on development environment and then will *watch* for changes on templates, styles and scripts to automatically rebuild those items.
 
 **Preview your theme**  
-Some people like to put the local Wordpress installation under the same project folder (even in the repo) while developing a theme. What I do is having a dummy WP install and link my theme under development the check the progress. Something like:
+Some people like to put the local Wordpress installation under the same project folder (even in the repo) while developing a theme. What I do is having a dummy WP install and link my theme under development to check the progress. Something like:
 
 ```bash
 ln -s /path-to/wp-theme-starter/_wp-theme-starter/ /path-to/wordpress/wp-content/themes/wp-theme-starter
